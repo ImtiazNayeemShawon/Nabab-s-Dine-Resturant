@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+
+
+.Home {
+  background-image: url(../assets/homebg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 90vh;
+}
+.Info h1 {
+  color: rgb(59, 55, 49);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 26px;
+
+}
+.name{
+    font-family: 'Oleo Script', cursive;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.name::first-letter{
+  font-size: 40px;
+  color: blue;
+}
+.Info p {
+  color: rgb(59, 55, 49);
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Roboto;
+  text-transform: capitalize;
+}
+.Food{
+  margin: auto;
+ 
+}
+.Food img{
+  margin-left: 0;
+  margin-right: 40px;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .Home {
+    background-image: url(../assets/homebg.svg);
+    background-repeat: no-repeat;
+  }
+  .Food img{
+   display: none;
+  }
+  .Info h1 {
+    text-align: center;
+  
+  }
+  .name{
+      text-align: center;
+  }
+  .Info{
+    text-align: center;
+  }
+}
