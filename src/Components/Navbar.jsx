@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white  px-2 sm:px-4 py-0">
+      <nav className="bg-white  px-2 sm:px-4 py-0 fixed w-full">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="/" className="flex items-center">
             <img
@@ -77,35 +77,45 @@ export default function Navbar() {
         </div>
       </nav>
       {open && (
-        <div className="shadow-2xl w-44  rounded font-bold py-10 text-center ">
-          <ul className="text-center">
-            <li>
-              <Link onClick={() => setOpen(!open)} to="/" className="block ">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => setOpen(!open)} className="block ">
-                Menu
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => setOpen(!open)} className="block ">
-                What we serve
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => setOpen(!open)} className="block">
-                About us
-              </Link>
-            </li>
-            <li>
-              <Link onClick={() => setOpen(!open)} className="block ">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+         <div className="mt-20 fixed bg-slate-50 shadow-xl shadow-indigo p-16  rounded py-9 md:hidden cursor-pointer">
+         <ul className="text-black-600 font-semibold list-item">
+           <a
+             href="/"
+             className=" list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
+             onClick={() => setOpen(!open)}
+           >
+             Home
+           </a>
+           <a
+            href="RoboticsShop"
+             className=" list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
+             onClick={() => setOpen(!open)}
+           >
+             Menu
+           </a>
+           <a
+             href="About"
+             onClick={() => setOpen(!open)}
+             className=" list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
+           >
+             What we serve
+           </a>
+           <a
+             href="Achivments"
+             onClick={() => setOpen(!open)}
+             className="list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
+           >
+             About us
+           </a>
+           <a
+             href="Gallery"
+             onClick={() => setOpen(!open)}
+             className="list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
+           >
+             Contact
+           </a>
+         </ul>
+       </div>
       )}
     </div>
   );

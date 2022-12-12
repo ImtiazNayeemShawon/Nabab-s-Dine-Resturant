@@ -14,7 +14,7 @@ export default function Home() {
             <br />
             we serve healthy food for your good mood
           </h1>{" "}
-          <p>
+          <p className="ml-6">
             Healthy switcher chefs do all the prep work, like peeding, <br />{" "}
             chopping & marinating, so you cook a fresh food{" "}
           </p>
