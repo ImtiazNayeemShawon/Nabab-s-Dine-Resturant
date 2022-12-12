@@ -11,9 +11,13 @@ export default function Navbar() {
       <nav className="bg-white  px-2 sm:px-4 py-0">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="/" className="flex items-center">
-            <img src={Logo} className="h-16 mr-3  rounded-3xl sm:h-12" alt="logo" />
+            <img
+              src={Logo}
+              className="h-16 mr-3  rounded-3xl sm:h-12"
+              alt="logo"
+            />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-gray">
-            Nabab's Dine
+              Nabab's Dine
             </span>
           </a>
           <button
@@ -66,24 +70,43 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="rounded bg-orange-400 p-0 text-slate-100 font-bold">
-                <Link className="block ">
-                  Order now
-                </Link>
+                <Link className="block ">Order now</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      {open && 
-      <div>
-        <ul className="bg-red-500 shadow-lg text-center">
-          <p>1</p>
-          <p>1</p>
-          <p>1</p>
-          <p>1</p>
-        </ul>
-      </div>
-      }
+      {open && (
+        <div className="shadow-2xl w-44  rounded font-bold py-10 text-center ">
+          <ul className="text-center">
+            <li>
+              <Link onClick={() => setOpen(!open)} to="/" className="block ">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setOpen(!open)} className="block ">
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setOpen(!open)} className="block ">
+                What we serve
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setOpen(!open)} className="block">
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => setOpen(!open)} className="block ">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
