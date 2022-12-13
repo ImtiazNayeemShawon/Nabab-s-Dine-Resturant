@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <div className={Styles.Home}>
       <div className={Styles.Info}>
-        <div className="sm:ml-20 mt-40 ">
+        <div className="ml-20 mt-40 max-sm:ml-1">
           {" "}
           <h1 className="first-letter:text-8xl sm:text-center">
             <span className={Styles.name}> Nabab's Dine Restaurant </span>{" "}
             <br />
             we serve healthy food for your good mood
           </h1>{" "}
-          <p className="ml-6">
+          <p className="ml-6 max-sm:ml-1 ">
             Healthy switcher chefs do all the prep work, like peeding, <br />{" "}
             chopping & marinating, so you cook a fresh food{" "}
           </p>

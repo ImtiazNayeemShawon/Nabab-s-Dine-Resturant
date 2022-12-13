@@ -9,15 +9,15 @@ export default function Footer() {
           Have Question in mind? <br /> let us help you
         </h1>
         <input
-          className="mt-5 bg-gray-200 p-3 rounded-full w-96 outline-none"
+          className="mt-5 bg-gray-200 p-3 rounded-full w-66 outline-none"
           type="Email"
-          placeholder="youremail@gmail.com.............."
+          placeholder="youremail@gmail.com............"
         />
         <button className="p-3 bg-orange-400 pl-11 pr-11 rounded-full text-white font-semibold ml-9 btn">
           Send
         </button>
       </div>
-      <div className="Foot mt-11">
+      <div className="Foot mt-11 grid max-sm:grid-cols-2">
         <div className="">
           <h1 className="text-center font-semibold text-red-600">
             Nabab dines
@@ -116,7 +116,7 @@ export default function Footer() {
           <h1 className="sm:text-slate-100 text-xl font-bold dev">
             Developer conctact
           </h1>
-          <ul className="flex p-5 ">
+          <ul className="flex p-4 ">
             <a href="https://www.facebook.com/imtinayeem/" target="blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

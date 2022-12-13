@@ -29,11 +29,7 @@ a{
    li{
     text-align: left;
    }
-   .Foot{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    place-items: center;
-}
+   
 .dev{
     color: rgb(23, 23, 27);
     margin-top: 10px;

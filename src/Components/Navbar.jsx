@@ -8,12 +8,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-white  px-2 sm:px-4 py-0 fixed w-full">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
+      <nav className="bg-white   py-0 fixed w-full">
+        <div className=" flex  items-center ">
           <a href="/" className="flex items-center">
             <img
               src={Logo}
-              className="h-16 mr-3  rounded-3xl sm:h-12"
+              className="h-14 mr-3  rounded-3xl sm:h-12"
               alt="logo"
             />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-gray">
@@ -21,7 +21,7 @@ export default function Navbar() {
             </span>
           </a>
           <button
-            className=" p-2 text-m text-black-500 rounded-lg md:hidden  bg-orange-300 mr-5 hover:bg-slate-200"
+            className=" p-2 ml-20 text-m text-black-500 rounded-lg md:hidden  bg-orange-300  hover:bg-slate-200"
             onClick={() => setOpen(!open)}
           >
             <span className="sr-only">Open main menu</span>
