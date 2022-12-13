@@ -31,7 +31,7 @@ export default function Menu() {
         <div className={Styles.Itemsmenu}>
           {Data.map((names) => {
             return (
-              <div className="bg-black-100 shadow-lg p-10 m-4  rounded shadow-indigo-500/40 content-center ">
+              <div className="bg-black-100 shadow-lg p-10 m-4  rounded shadow-indigo-500/40 content-center grid place-items-center">
                 <p className="top-0 bottom-4 text-center font-semibold uppercase">
                   Chicken fry
                 </p>
@@ -42,7 +42,7 @@ export default function Menu() {
                 </p>
                 <br/>
                 <button
-                  className="bg-orange-500 text-slate-50 font-semibold uppercase p-2 rounded mt-6   hover:bg-orange-400 justify-center sm:ml-8 order "
+                  className="bg-orange-500 text-slate-50 font-semibold uppercase p-2 rounded mt-6   hover:bg-orange-400  order "
                   onClick={setShow}
                 >
                   Order now
