@@ -21,7 +21,7 @@ export default function Navbar() {
             </span>
           </a>
           <button
-            className="inline-flex items-center p-2  ml-3 text-sm text-black-500 rounded-lg md:hidden  dark:text-gray-400 bg-orange-300 hover:bg-slate-200"
+            className=" p-2 text-m text-black-500 rounded-lg md:hidden  bg-orange-300 mr-5 hover:bg-slate-200"
             onClick={() => setOpen(!open)}
           >
             <span className="sr-only">Open main menu</span>
