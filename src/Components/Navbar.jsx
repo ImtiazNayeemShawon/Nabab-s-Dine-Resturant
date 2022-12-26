@@ -103,7 +103,7 @@ Our menu
         </div>
       </nav>
       {open && (
-        <div className="mt-1 fixed bg-slate-50 shadow-xl shadow-indigo p-16  rounded py-9 md:hidden cursor-pointer">
+        <div className="mt-16 fixed bg-slate-50 shadow-xl shadow-indigo p-16  rounded py-9 md:hidden cursor-pointer">
           <ul className="text-black-600 font-semibold list-item">
             <a
               href="/"
@@ -124,21 +124,21 @@ Our menu
               onClick={() => setOpen(!open)}
               className=" list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
             >
-              About
+              Offers
             </a>
             <a
               href="Achivments"
               onClick={() => setOpen(!open)}
               className="list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
             >
-              Achievements
+              Services
             </a>
             <a
               href="Gallery"
               onClick={() => setOpen(!open)}
               className="list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
             >
-              Projects
+              About us
             </a>
           </ul>
         </div>
