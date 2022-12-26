@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div className={Styles.Home}>
       <div className="grid grid-cols-2 max-sm:grid-cols-1">
-        <div className="mt-40 ml-20 max-sm:ml-0">
+        <div className="mt-40 ml-20 max-sm:ml-0 max-sm:mx-2">
           {" "}
-          <h1 className="first-letter:text-8xl max-sm:text-center">
+          <h1 className="first-letter:text-8xl max-sm:text-center ">
             <span className="font-bold text-5xl text-gray-800 max-sm:text-center"> Nabab's Dine Restaurant </span>{" "}
             <br />
             <span className="text-xl font-semibold text-orange-500">We serve healthy food for your good mood</span>
