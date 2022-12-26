@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../Styles/Menu.module.css";
 import Data from "../Data/food.json";
 import { useState } from "react";
-import "../Styles/Responsive.css";
+
 
 export default function Menu() {
   const [show, setShow] = useState();

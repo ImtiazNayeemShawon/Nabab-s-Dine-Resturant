@@ -2,32 +2,34 @@ import React from "react";
 import Styles from "../Styles/Home.module.css";
 import { Link } from "react-router-dom";
 import Food from "../assets/food.png";
-import "../Styles/Responsive.css"
+
+
+
 export default function Home() {
   return (
     <div className={Styles.Home}>
-      <div className={Styles.Info}>
-        <div className="ml-20 mt-40 max-sm:ml-1">
+      <div className="grid grid-cols-2 max-sm:grid-cols-1">
+        <div className="mt-40 ml-20 max-sm:ml-0">
           {" "}
-          <h1 className="first-letter:text-8xl sm:text-center">
-            <span className={Styles.name}> Nabab's Dine Restaurant </span>{" "}
+          <h1 className="first-letter:text-8xl max-sm:text-center">
+            <span className="font-bold text-5xl text-gray-800 max-sm:text-center"> Nabab's Dine Restaurant </span>{" "}
             <br />
-            we serve healthy food for your good mood
+            <span className="text-xl font-semibold text-orange-500">We serve healthy food for your good mood</span>
           </h1>{" "}
-          <p className="ml-6 max-sm:ml-1 ">
-            Healthy switcher chefs do all the prep work, like peeding, <br />{" "}
+          <p className="max-sm:text-center text-lg">
+            Healthy switcher chefs do all the prep work, like peeding,
             chopping & marinating, so you cook a fresh food{" "}
           </p>
-          <div className="mt-10">
-            <Link className="p-3   text-white bg-orange-400 rounded-2xl ">
+          <div className="mt-9 max-sm:mt-2 max-sm:place-items-center max-sm:grid max-sm:grid-cols-2">
+            <button className="text-white font-bold bg-orange-500 p-3 rounded">
               Order now
-            </Link>
-            <Link class="bg-white-100 text-orange-500 font-semibold sm:py-2 sm:px-4 border border-orange-500 hover:border-transparent rounded sm:ml-10 mt-20 menu">
+            </button>
+            <button class="text-orange-500 font-bold bg-white p-3 rounded m-8 border-2 border-orange-300">
               See menu
-            </Link>
+            </button>
           </div>
         </div>
-        <div className={Styles.Food}>
+        <div className="mt-40 max-sm:mt-0">
           <img src={Food}/>
         </div>
       </div>
