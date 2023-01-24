@@ -12,12 +12,7 @@ export default function Navbar() {
       <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 shadow-xl">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
           <span class="">
-            
-            <img className="w-12 rounded-md"
-        src={Logo}
-        alt="logo"
-      
-      /> 
+            <img className="w-12 rounded-md" src={Logo} alt="logo" />
           </span>
 
           <div class="flex md:order-2">
@@ -68,15 +63,15 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="RoboticsShop"
+                  href="Menu"
                   class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white"
                 >
-Our menu
+                  Our menu
                 </a>
               </li>
               <li>
                 <a
-                  href="About"
+                  href="Services"
                   class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white"
                 >
                   Services
@@ -84,7 +79,7 @@ Our menu
               </li>
               <li>
                 <a
-                  href="Achivments"
+                  href="Offers"
                   class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white"
                 >
                   Offers
@@ -92,7 +87,7 @@ Our menu
               </li>
               <li>
                 <a
-                  href="Gellary"
+                  href="About"
                   class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white"
                 >
                   About us
@@ -113,7 +108,7 @@ Our menu
               Home
             </a>
             <a
-             href="RoboticsShop"
+              href="menu"
               className=" list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
               onClick={() => setOpen(!open)}
             >
@@ -127,7 +122,7 @@ Our menu
               Offers
             </a>
             <a
-              href="Achivments"
+              href="Serivces"
               onClick={() => setOpen(!open)}
               className="list-item mb-10  hover:bg-slate-200 p-2 rounded text-center text-black"
             >
